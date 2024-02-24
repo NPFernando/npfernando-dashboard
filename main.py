@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+#import plotly.express as px
 import random
 from datetime import datetime, timedelta
 
@@ -17,11 +17,11 @@ def generate_dummy_performance_data(metric, minutes=60):
     data = {'Timestamp': time_range, f'{metric} Usage (%)': [random.uniform(30, 70) for _ in range(minutes)]}
     return pd.DataFrame(data)
 
-# Function to display live performance chart
+"""# Function to display live performance chart
 def display_live_performance_chart(metric, df):
     st.subheader(f"Live {metric} Usage")
     chart = px.line(df, x='Timestamp', y=f'{metric} Usage (%)', title=f'Live {metric} Usage Over Time')
-    st.plotly_chart(chart)
+    st.plotly_chart(chart)"""
 
 # Function to generate dummy virus detail report
 def generate_dummy_virus_report(month):
