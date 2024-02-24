@@ -46,8 +46,8 @@ if __name__ == '__main__':
     ram_df = generate_dummy_performance_data('RAM')
     cpu_df = generate_dummy_performance_data('CPU')
 
-    display_live_performance_chart('RAM', ram_df)
-    display_live_performance_chart('CPU', cpu_df)
+    #display_live_performance_chart('RAM', ram_df)
+    #display_live_performance_chart('CPU', cpu_df)
 
     # Display monthly virus detail report
     selected_month = st.selectbox("Select Month", ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])
